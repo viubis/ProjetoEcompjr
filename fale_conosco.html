@@ -75,6 +75,42 @@
         </div>
     </header>
 
+        <!--CONTACTS-->
+    
+        <section id="featurette_contacts">
+            <div class="container marketing">
+              <div class="row featurette">
+                  <h2 class="featurette-heading text-center" style="font-weight: 700;">Fale Conosco</h2>
+                  <div class="col-md-12 text-center">
+                         <p class="text-center" style="font-family: OpenSans; color: #000; font-size: 16px; line-height: 1.6; margin-top: 25px;">Envie sua dúvida, sugestão ou até mesmo uma reclamação, teremos prazer em ouvi-lo.</p>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="col-md-9 text-center" style="margin:0 auto; float:none;">
+                    
+                        <!-- Open Mensagens -->
+                        
+                      
+                          
+                      <!-- Close Mensagens --> 
+                    
+                        <form id="command" role="form" action="/send_email" method="POST">
+                            <input class="form-group col-md-6" type="text" name="nomeContato" placeholder="Nome:">
+                            <input class="form-group col-md-6" type="text" name="emailContato" placeholder="Email:">
+                            <input class="form-group col-md-12" type="text" name="assuntoContato" placeholder="Assunto:">
+                            <textarea class="form-group col-md-12" rows="10" placeholder="Mensagem:" name="conteudoContato"></textarea>
+                            <div class="text-right" style="padding: 0 30px;">
+                              <button type="submit" class="btn btn-warning-custom" >Enviar mensagem <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                            </div>
+                      <div>
+  <input type="hidden" name="_csrf" value="edb2ef27-7a3d-4bbf-be99-6e3e60ccfebb" />
+  </div></form>	
+                    </div>
+              </div>
+            </div>
+      </section>
 
     <!-- Footer -->
     <footer>
