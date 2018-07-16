@@ -26,13 +26,8 @@
     	.h3{
     		color: black;
     	}
-
     	.h4{
     		color: gray;
-    	}
-
-    	.modal-f {
-    		width: 50%;
     	}
     </style>
 
@@ -49,22 +44,20 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                	<a href="#" class="navbar-brand" data-toggle='modal' data-target="#myModal" style=" color: rgb(110, 0, 77);">Login</a>
+                <a class="navbar-brand" style=" color: rgb(110, 0, 77);">Login</a>
             </div>
-
-
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html"style=" color: rgb(110, 0, 77);">Inicio</a>
+                        <a href="index.html" style=" color: rgb(110, 0, 77);">Inicio</a>
                     </li>
                     <li>
                         <a href="about.html" target="_blank" style=" color: rgb(110, 0, 77);">Membros</a>
                     </li>
                     <li>
-                        <a href="post.html" target="_blank" style=" color: rgb(110, 0, 77);">Agenda</a>
+                        <a href="post.html" style=" color: rgb(110, 0, 77);">Agenda</a>
                     </li>
                     <li>
                         <a href="contact.html" style=" color: rgb(110, 0, 77);">Fale conosco</a>
@@ -75,49 +68,6 @@
         </div>
         <!-- /.container -->
     </nav>
-
-    	<!-- The Modal -->
-  	<div class="modal fade" id="myModal">
-    	<div class="modal-dialog modal-lg">
-      		<div class="modal-content">
-      
-        		<!-- Modal Header -->
-        		<div class="modal-header">
-          			<h4 class="modal-title text-center h2">Conectar</h4>
-          			<button type="button" class="close" data-dismiss="modal">&times;</button>
-        		</div>
-        
-        		<!-- Modal body -->
-        		<div class="modal-body">
-
-          			<div class="container">
-            			<form action="/action_page.php">
-                			<div class="form-group">
-                    			<label for="Login">Login:</label>
-                    			<input type="name" class="form-control modal-f" id="name">
-                			</div>
-            				<div class="form-group">
-                				<label for="pwd">Senha:</label>
-                				<input type="password" class="form-control modal-f" id="pwd">
-            				</div>
-            				<div class="checkbox">
-                				<label><input type="checkbox"> Manter-me conectado</label>
-            				</div>
-            				<button type="submit" class="btn btn-default">Conectar</button>
-            			</form>
-        			</div>
-
-        		</div>
-        
-        		<!-- Modal footer -->
-        		<div class="modal-footer">
-          			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        		</div>
-        
-      		</div>
-    	</div>
-  	</div>
-
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
@@ -136,44 +86,7 @@
     </header>
 
     <section>
-        <div class="container agenda" style="border-bottom: 1px solid purple; width: 70%;"><h3>Agenda</h3></div>
-
-        <div class="table-responsive container" style="width: 70%; padding-top:10px;">
-            <table class="table">
-                <thead>
-                    <tr>
-                       <th class="h3">Data</th>
-                       <th class="h3">Evento</th> 
-                    </tr>
-                </thead>
-                <tbody>
-                	<tr>
-                		<td class="h4">21 Setembro 2018</td>
-                		<td class="h4">Gingana da Primavera</td>
-                	</tr>
-                    <tr>
-                        <td class="h4">21 Junho 2018</td>
-                        <td class="h4">Forrossomos</td>
-                    </tr>
-                    <tr>
-                        <td class="h4">12 Maio 2018</td>
-                        <td class="h4">Encontro das mães</td>
-                    </tr>
-                    <tr>
-                    	<td class="h4">21 Abril 2018</td>
-                    	<td class="h4">Desfile de Tiradentes</td>
-                    </tr>
-                    <tr>
-                    	<td class="h4">24 Dezembro 2017</td>
-                    	<td class="h4">Amigo Secreto</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <!-- Nota: dados os eventos são fictícios -->
-
-
-        <div class="container" style="border-top: 1px solid purple; width: 70%;"></div>
+        
     </section>
 
     <!-- Footer -->
