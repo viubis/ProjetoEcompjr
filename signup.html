@@ -26,7 +26,6 @@
     <style>
         .modal-f {width: 50%;}
 
-        .input-c {width: 50%;}
     </style>
 
 </head>
@@ -86,7 +85,7 @@
                     <div class="container-fluid">
                         <div class="row">
 
-                            <div class="col-lg-6" style="border-right: 1px solid gray">
+                            <div align="center">
                                 <form action="index.html">
                                     <div class="form-group">
                                         <label for="Login">Login:</label>
@@ -97,16 +96,9 @@
                                         <input type="password" class="form-control modal-f" id="pwd">
                                     </div>
                                     <div class="checkbox">
-                                        <label><input type="checkbox"><small class="h4">Manter-me conectado</small></label>
+                                        <label><input type="checkbox"><small class="h5">Manter-me conectado</small></label>
                                     </div>
                                     <button type="submit" class="btn btn-default">Conectar-se</button>
-                                </form>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <p class="h4" style="line-height: 0.4in;">Não é cadastrado?<br>Faça seu cadastro agora!</p>
-                                <form action="signup.html">
-                                    <button type="submit" class="btn btn-default">Cadastre-se</button>
                                 </form>
                             </div>
                         </div>
@@ -146,39 +138,47 @@
         <div class="container" style="width: 50%; margin-top: 0.4in; margin-bottom: 0.4in;">
             <div class="row">
                 <div class="col-6">
-                    <form>
-                        <div class="form-group col-lg">
-                            <label for="InputName1"><h4>Nome*</h4></label>
-                            <input type="text" class="form-control input-c" id="InputName1" placeholder="Nome">
+                    <form name="form-cad" onsubmit="validate()">
+                        <div class="form-group col-lg-6">
+                            <label for="InputName1"><h4>*Nome:</h4></label>
+                            <input type="text" class="form-control input-c" required="" id="InputName1" placeholder="Nome">
                         </div>
-                        <div class="form-group col-lg">
-                            <label for="InputName1"><h4>Login*</h4></label>
-                            <input type="text" class="form-control input-c" id="InputName1" placeholder="Login">
+                        <div class="form-group col-lg-6">
+                            <label for="InputLog1"><h4>*Login:</h4></label>
+                            <input type="text" class="form-control input-c" required="" id="InputLog1" placeholder="Login">
                         </div>
-                        <div class="form-group col-lg">
-                            <label for="InputEmail1"><h4>Email*</h4></label>
-                            <input type="Email" class="form-control input-c" id="InputEmai1" aria-describedby="Email" placeholder="nome@email.com">
-                            <small id="Email" class="h5 text-muded">Não compartilhe seu email com estranhos</small>
+                        <div class="form-group col-lg-6">
+                            <label for="InputCpf"><h4>*CPF:</h4></label>
+                            <input type="text" data-mask="000.000.000-00" required="" class="form-control input-c" id="InputCpf" placeholder="CPF">
                         </div>
-                        <div class="form-group col-lg">
-                            <label for="InputPass1"><h4>Senha*<h4></label>
-                            <input type="password" class="form-control" id="InputPass1" placeholder="**********">
+                        <div class="form-group col-lg-6">
+                            <label for="InputNasc"><h4>*Data de Nascimento:</h4></label>
+                            <input type="date" min="01/01/1900" max="01/01/2000" required="" class="form-control input-c" id="InputNasc" placeholder="Nasc.">
                         </div>
-                        <div class="form-group col-lg">
-                            <label for="InputPass2"><h4>Repita a Senha*<h4></label>
-                            <input type="password" class="form-control" id="InputPass2" placeholder="**********">
+                        <div class="form-group col-lg-8" style="width: 60%;">
+                            <label for="InputEmail1"><h4>*Email:</h4></label>
+                            <input type="email" required="" class="form-control input-c" id="InputEmai1" aria-describedby="Email" placeholder="nome@email.com">
+                            <small id="Email" class="h5 text-muded" style="color: gray;">Não compartilhe seu email com estranhos</small>
                         </div>
-                        <div class="form-group col-lg">
+                        <div class="form-group col-lg-6">
+                            <label for="InputPass1"><h4>*Senha:<h4></label>
+                            <input type="password" required="" class="form-control" id="InputPass1" placeholder="**********">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label for="InputPass2"><h4>*Repita a Senha:<h4></label>
+                            <input type="password" required="" class="form-control" id="InputPass2" placeholder="**********">
+                        </div>
+                        <div class="form-group col-lg-12">
                             <input type="checkbox" class="form-check-input" id="Check1">
                             <label class="h5 form-check-label" for="Check1">Receber novidades</label>
                         </div>
-                        <div class="form-group col-lg">
+                        <div class="form-group col-lg-12">
                             <button type="submit" class="btn btn-default">Concluir</button>
                         </div>
                     </form>
-                    <p id="text2" class="h5" style="color: red">*Campos Obrigatórios</p>
                 </div>
             </div>
+                <p id="text2" class="h5" style="color: red">*Campos Obrigatórios</p>
         </div>
 
 
@@ -217,6 +217,10 @@
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
+    <!-- jQueryMask -->
+
+    <script src="vendor/jquery/jquery-mask-plugin/jquery.mask.min.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
@@ -228,6 +232,7 @@
     <script src="js/clean-blog.min.js"></script>
 
     <script src="js/main.js"></script>
+
 
 </body>
 
