@@ -22,13 +22,11 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
     <style>
-    	.h3{
-    		color: black;
-    	}
-    	.h4{
-    		color: gray;
-    	}
+        .modal-f {width: 50%;}
+
+        .input-c {width: 50%;}
     </style>
 
 </head>
@@ -44,20 +42,22 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" style=" color: rgb(110, 0, 77);">Login</a>
+                    <a href="#" class="navbar-brand" data-toggle='modal' data-target="#myModal" style=" color: rgb(110, 0, 77);">Login</a>
             </div>
+
+
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html" style=" color: rgb(110, 0, 77);">Inicio</a>
+                        <a href="index.html"style=" color: rgb(110, 0, 77);">Inicio</a>
                     </li>
                     <li>
                         <a href="about.html" target="_blank" style=" color: rgb(110, 0, 77);">Membros</a>
                     </li>
                     <li>
-                        <a href="post.html" style=" color: rgb(110, 0, 77);">Agenda</a>
+                        <a href="post.html" target="_blank" style=" color: rgb(110, 0, 77);">Agenda</a>
                     </li>
                     <li>
                         <a href="contact.html" style=" color: rgb(110, 0, 77);">Fale conosco</a>
@@ -68,6 +68,61 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+      
+                <!-- Modal Header -->
+                <div class="modal-header" style="background-color: purple;">
+                    <h4 class="modal-title text-center h2" style="position: relative; top: 10px; color: white">Conectar</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-lg-6" style="border-right: 1px solid gray">
+                                <form action="index.html">
+                                    <div class="form-group">
+                                        <label for="Login">Login:</label>
+                                        <input type="name" class="form-control modal-f" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Senha:</label>
+                                        <input type="password" class="form-control modal-f" id="pwd">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"><small class="h4">Manter-me conectado</small></label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Conectar-se</button>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <p class="h4" style="line-height: 0.4in;">Não é cadastrado?<br>Faça seu cadastro agora!</p>
+                                <form action="signup.html">
+                                    <button type="submit" class="btn btn-default">Cadastre-se</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
@@ -86,7 +141,48 @@
     </header>
 
     <section>
-        
+        <div class="container" style="border-bottom: 1px solid purple; width: 60%;"><h3>Cadastrar</h3></div>
+
+        <div class="container" style="width: 50%; margin-top: 0.4in; margin-bottom: 0.4in;">
+            <div class="row">
+                <div class="col-6">
+                    <form>
+                        <div class="form-group col-lg">
+                            <label for="InputName1"><h4>Nome*</h4></label>
+                            <input type="text" class="form-control input-c" id="InputName1" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-lg">
+                            <label for="InputName1"><h4>Login*</h4></label>
+                            <input type="text" class="form-control input-c" id="InputName1" placeholder="Login">
+                        </div>
+                        <div class="form-group col-lg">
+                            <label for="InputEmail1"><h4>Email*</h4></label>
+                            <input type="Email" class="form-control input-c" id="InputEmai1" aria-describedby="Email" placeholder="nome@email.com">
+                            <small id="Email" class="h5 text-muded">Não compartilhe seu email com estranhos</small>
+                        </div>
+                        <div class="form-group col-lg">
+                            <label for="InputPass1"><h4>Senha*<h4></label>
+                            <input type="password" class="form-control" id="InputPass1" placeholder="**********">
+                        </div>
+                        <div class="form-group col-lg">
+                            <label for="InputPass2"><h4>Repita a Senha*<h4></label>
+                            <input type="password" class="form-control" id="InputPass2" placeholder="**********">
+                        </div>
+                        <div class="form-group col-lg">
+                            <input type="checkbox" class="form-check-input" id="Check1">
+                            <label class="h5 form-check-label" for="Check1">Receber novidades</label>
+                        </div>
+                        <div class="form-group col-lg">
+                            <button type="submit" class="btn btn-default">Concluir</button>
+                        </div>
+                    </form>
+                    <p id="text2" class="h5" style="color: red">*Campos Obrigatórios</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="border-top: 1px solid purple; width: 60%;"></div>
     </section>
 
     <!-- Footer -->
@@ -112,7 +208,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted" style="color: black">Copyright &copy; Trainees EcompJr 2018.1</p>
+                    <p class="copyright text-muted">Copyright &copy; Trainees EcompJr 2018.1</p>
                 </div>
             </div>
         </div>
@@ -130,6 +226,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+
+    <script src="js/main.js"></script>
 
 </body>
 
