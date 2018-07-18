@@ -23,6 +23,28 @@
 
     <style>
         .modal-f {width: 50%;}
+
+        .tx-a {
+            bottom: 1.1in;
+            color: white;
+            text-shadow: 1px 1px black;
+        }
+
+        .tx-b {
+            bottom: 0.7in;
+            left: 8in;
+            color: black;
+            text-shadow: 1px 1px white;
+        }
+
+        @font-face {
+            font-family: "marsh";
+            src: url('vendor/font/marsh.otf');
+        }   
+
+        .tx {
+            font-family: marsh;
+        }
     </style>
 
 </head>
@@ -48,7 +70,10 @@
                         <a href="index.html"style=" color: rgb(110, 0, 77);">Inicio</a>
                     </li>
                     <li>
-                        <a href="about.html" target="_blank" style=" color: rgb(110, 0, 77);">Membros</a>
+                        <a href="staff.html" target="_blank" style=" color: rgb(110, 0, 77);">Membros</a>
+                    </li>
+                    <li>
+                        <a href="about.html" target="_blank" style=" color: rgb(110, 0, 77);">Sobre nós</a>
                     </li>
                     <li>
                         <a href="post.html" target="_blank" style=" color: rgb(110, 0, 77);">Agenda</a>
@@ -146,19 +171,19 @@
   			<!-- Wrapper for slides -->
   			<div class="carousel-inner" align="center">
     			<div class="item active">
-      				<img class="img-resonsive" src="img/imgindex3.jpg" alt="slide 1" style="height: 500px;">
+      				<img class="img-resonsive" src="img/imgindex3.jpg" alt="slide 1" style="height: 400px;">
     			</div>
 
     			<div class="item">
-      				<img class="img-resonsive" src="img/imgindex4.jpg" alt="slide 2" style="height: 500px;">
+      				<img class="img-resonsive" src="img/imgindex4.jpg" alt="slide 2" style="height: 400px;">
     			</div>
 
     			<div class="item">
-      				<img class="img-resonsive" src="img/imgindex5.jpg" alt="slide 3" style="height: 500px;">
+      				<img class="img-resonsive" src="img/imgindex5.jpg" alt="slide 3" style="height: 400px;">
     			</div>
 
     			<div class="item">
-      				<img class="img-resonsive" src="img/imgindex6.jpg" alt="slide 4" style="height: 500px;">
+      				<img class="img-resonsive" src="img/imgindex6.jpg" alt="slide 4" style="height: 400px;">
     			</div>
   			</div>
 
@@ -173,21 +198,38 @@
   			</a>
         </div>
         
-
-        <div class="container" style="padding-bottom: 50px;">
-			<h3 class="text-center">Missão</h3>
-			<p class="h4 text-center">Fundada em 2001 a Cromossomos 21 é organização sem fins lucrativos que oferece assitência psicosocial e pedagogica a crianças, jovens e adultos com sindrome de down.</p>
+        <!-- Missao, Visão e Valores -->
+        <div style="padding-top: 20px; position: relative;">
+            <img src="img/imgindex7.jpg">
+			<p class="h4 text-center col-lg-6 tx-a tx" style="position: absolute;">*"Nosso objetivo foi, é e será sempre dar apoio aos portadores da Síndrome de Down prestanto serviços que auxiliem ao seu desenvolvimento e dando espaço pra que eles despertem seu potencial".</p>
         </div>
 
-        <div class="container" style="padding-bottom: 50px;">
-			<h3 class="text-center">Visão</h3>
-			<p class="h4 text-center">Fundada em 2001 a Cromossomos 21 é organização sem fins lucrativos que oferece assitência psicosocial e pedagogica a crianças, jovens e adultos com sindrome de down.</p>
+        <div style="position: relative;">
+            <img src="img/imgindex8.jpg" style="left: 145px; position: relative;">
+			<p class="h4 text-justify col-lg-4 tx-b tx" style="position: absolute;">
+                <span class="h3">*O que queremos:</span>
+                <br><br>
+                Acompanhamento de no mínimo 100 familias com pessoas portadoras da Síndrome de Down;
+                <br><br>
+                Expandir a cede;
+                <br><br>
+                Espandir nosso projeto para mais 2 cidades.
+            </p>
         </div>
         
-        <div class="container" style="padding-bottom: 50px;">
-			<h3 class="text-center">Valores</h3>
-			<p class="h4 text-center">Fundada em 2001 a Cromossomos 21 é organização sem fins lucrativos que oferece assitência psicosocial e pedagogica a crianças, jovens e adultos com sindrome de down.</p>
+        <div style="position: relative;">
+            <img src="img/imgindex9.jpg">
+			<p class="h4 text-center col-lg-6 tx-a tx" style="position: absolute;">*"Aqui nós faremos o possível e o impossivel para tirar sorriso de você".
+            <br><br>
+            "Sair daqui podendo enchegar um mundo de uma forma mais bela."
+            <br><br>
+            "Ensinar e aprender com vocês."
+        </p>
 		</div>
+
+        <p class="h5 col-lg-2" style="color: gray; float: right; margin-top: 20px;">*Dados não oficiais</p>
+
+        <div class="container" style="border-bottom: 1px solid purple; margin-top: 100px; width: 90%"></div>
     </section>
 
     <!-- Footer -->
